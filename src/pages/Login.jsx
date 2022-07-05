@@ -5,7 +5,7 @@ function Login() {
     return (
         <div className="form">
             <form >
-                <h1>Transfy</h1>
+                <h1>Se connecter</h1>
                     <input type="text" placeholder="E-mail" />
                     <input type="password" placeholder="Mot de passe" />
                 <button type="submit">Se connecter</button>

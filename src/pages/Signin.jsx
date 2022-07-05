@@ -5,7 +5,7 @@ function Signin() {
     return (
         <div className="form">
             <form >
-                <h1>Transfy</h1>
+                <h1>Créer un compte</h1>
                 <div className="input">
                     <input type="text" placeholder="Nom" />
                 </div>

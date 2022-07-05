@@ -7,28 +7,23 @@ function Signin() {
             <form >
                 <h1>Transfy</h1>
                 <div className="input">
-                    <label>Nom</label>
-                    <input type="text" placeholder="Entrer votre nom" />
+                    <input type="text" placeholder="Nom" />
                 </div>
 
                 <div className="input">
-                    <label>Prénom</label>
-                    <input type="text" placeholder="Entrer votre prénom" />
+                    <input type="text" placeholder="Prénom" />
                 </div>
 
                 <div className="input">
-                    <label>E-mail</label>
-                    <input type="text" placeholder="Entrer votre e-mail" />
+                    <input type="text" placeholder="Numéro CIN" />
                 </div>
 
                 <div className="input">
-                    <label>CIN</label>
-                    <input type="text" placeholder="Entrer votre CIN" />
+                    <input type="text" placeholder="E-mail" />
                 </div>
 
                 <div className="input">
-                    <label>Mot de passe</label>
-                    <input type="password" placeholder="Entrer votre mot de passe" />
+                    <input type="password" placeholder="Mot de passe" />
                 </div>
                 <button type="submit">S'inscrire</button>
             </form>

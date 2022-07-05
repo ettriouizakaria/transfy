@@ -6,14 +6,8 @@ function Login() {
         <div className="form">
             <form >
                 <h1>Transfy</h1>
-                <div className="input">
-                    <label>E-mail</label>
-                    <input type="text" placeholder="Entrer votre e-mail" />
-                </div>
-                <div className="input">
-                    <label>Mot de passe</label>
-                    <input type="password" placeholder="Entrer votre mot de passe" />
-                </div>
+                    <input type="text" placeholder="E-mail" />
+                    <input type="password" placeholder="Mot de passe" />
                 <button type="submit">Se connecter</button>
             </form>
             <p>Vous n'avez pas un compte? <Link to="/signin">S'inscrire</Link> </p>

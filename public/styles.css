@@ -90,7 +90,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     padding: 10px 15px;
     margin: 0 auto 10px auto;
-    display: inline-block;
+    display: block;
     text-align: center;
     font-size: 18px;
     color: #50a3a2;
@@ -105,41 +105,22 @@ body {
     background-color: #50a3a2;
     border: 0;
     padding: 10px 15px;
+    margin: 20px 0;
     color: white;
     border-radius: 3px;
     width: 250px;
     font-size: 18px;
-    margin-left: 37%;
     cursor: pointer;
 }
 
 .form p {
-    margin-top: 40px;
-    text-decoration: underline;
+    margin-top: 30px;
 }
 
 .form a {
     padding: 5px;
     font-size: 18px;
-    text-decoration: none;
 }
 
-.input {
-    width: 500px;
-    height: 50px;
-    padding: 15px;
-    display: inline-flexbox;
-}
-
-.input label {
-    float: left;
-    padding-top: 20px;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.input input {
-    float: right;
-}
 
 

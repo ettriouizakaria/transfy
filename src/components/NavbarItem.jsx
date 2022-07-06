@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink } from "react-router-dom";
 
 function NavbarItem(props){
     return  (
         <div className="navbar-item">
-            <Link to={props.link}> {props.title} </Link>
+            <NavLink to={props.link} activeClassName="active"> {props.title} </NavLink>
         </div>
     );
 }

@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="container">
         <Navbar />
         <Switch>
           <Route exact path="/" >

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,13 +7,12 @@
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #50a3a2;
     background: #ccc;
     width: 100%;
     margin: 0;
 }
-
 
 .navbar {
     display: flex;
@@ -38,7 +38,7 @@ body {
     margin-left: 40px;
 }
 
-.navbar-items{
+.navbar-items {
     display: inline-block;
     position: fixed;
     right: 10px;
@@ -57,23 +57,21 @@ body {
     padding: 10px 20px;
 }
 
-.navbar-item a:hover{
+.navbar-item a:hover {
     background-color: rgb(230, 224, 224);
     border-radius: 5px;
 }
 
-
 .form {
-    padding: 1.5% 5% ;
+    padding: 1.5% 5%;
     width: 500px;
     height: 100%;
     margin: 8% auto 3% auto;
     border: 2px solid #50a3a2;
     text-align: center;
     background-color: white;
-    box-shadow: 2px 2px 10px  , -2px -2px 10px  ;
+    box-shadow: 2px 2px 10px, -2px -2px 10px;
 }
-
 
 .form h1 {
     color: #50a3a2;
@@ -97,8 +95,6 @@ body {
     font-weight: 300;
 }
 
-
-
 .form button {
     appearance: none;
     outline: 0;
@@ -121,6 +117,3 @@ body {
     padding: 5px;
     color: #50a3a2;
 }
-
-
-

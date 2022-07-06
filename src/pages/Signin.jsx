@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import PrimaryButton from "../components/primary-button/PrimaryButton";
 
 function Signin() {
     return (
@@ -25,7 +26,7 @@ function Signin() {
                 <div className="input">
                     <input type="password" placeholder="Mot de passe" />
                 </div>
-                <button type="submit">S'inscrire</button>
+                <PrimaryButton label="S'inscrire" marginTop="15"></PrimaryButton>
             </form>
             <p>Avez-vous dèja un compte? <Link to="/">Se connecter</Link> </p>
         </div>

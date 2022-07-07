@@ -3,13 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "mapbox-gl": "^1.13.2",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
+    "react-booking-form": "^2.0.0-alpha.64",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-mapbox-gl": "^5.1.1",
     "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
+    "tailwind-styled-components": "^2.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

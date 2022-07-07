@@ -1,11 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTrain, faMoneyCheck, faSliders } from "@fortawesome/free-solid-svg-icons";
 
+import Home from "../pages/Home";
+import Navbar from "./Navbar";
 import Login from "../pages/Login";
 import Signin from "../pages/Signin"
-import Navbar from "./Navbar";
 
 function App() {
+  library.add(faTrain, faSliders, faMoneyCheck)
   return (
     <Router>
       <div className="container">
@@ -16,6 +20,9 @@ function App() {
           </Route>
           <Route exact path="/signin" >
             <Signin />
+          </Route>
+          <Route exact path="/home" >
+            <Home />
           </Route>
         </Switch>
       </div>

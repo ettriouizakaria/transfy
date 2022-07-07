@@ -100,3 +100,29 @@ body {
     padding: 5px;
     color: #50a3a2;
 }
+
+
+  h4{
+    margin-bottom: 15px;
+  }
+
+  .criteria-range{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: #8f23b3
+  }
+  h3{
+    text-align: left;
+    margin-bottom: 15px;
+    color: rgb(94, 85, 85);
+    letter-spacing: 2px;
+  }
+  .inline-divs{
+    display: flex;
+  }
+  .map{
+    z-index: 9999;
+  }

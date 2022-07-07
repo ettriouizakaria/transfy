@@ -6,6 +6,7 @@ import { faTrain, faMoneyCheck, faSliders } from "@fortawesome/free-solid-svg-ic
 import Home from "../pages/Home";
 import Navbar from "./Navbar";
 import Login from "../pages/Login";
+import Reservation from "../pages/reservation";
 import Signin from "../pages/Signin"
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route exact path="/home" >
             <Home />
+          </Route>
+          <Route exact path="/reservation" >
+            <Reservation />
           </Route>
         </Switch>
       </div>

@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #50a3a2;
+    position: sticky;
+}
+
+.navbar .brand {
+    font-weight: 500;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.icon {
+    font-size: 1.55rem;
+}

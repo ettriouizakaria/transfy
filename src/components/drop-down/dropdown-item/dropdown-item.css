@@ -1,0 +1,20 @@
+.dropdown-item {
+    color: #212b27;
+    font-weight: 500;
+}
+
+.dropdown-item:not(:last-child) {
+    border-bottom: 1px solid #868686;
+}
+
+.dropdown-item a {
+    padding: 10px 8px;
+    display: block;
+    font-size: 0.97rem;
+    border-radius: 3px;
+}
+
+.dropdown-item a:hover {
+    color: #212b27;
+    background-color: #d1d1d1;
+}

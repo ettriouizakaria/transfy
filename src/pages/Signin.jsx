@@ -28,7 +28,7 @@ function Signin() {
                 </div>
                 <PrimaryButton label="S'inscrire" marginTop="15"></PrimaryButton>
             </form>
-            <p>Avez-vous dèja un compte? <Link to="/">Se connecter</Link> </p>
+            <p>Avez-vous dèja un compte? <Link to="/login">Se connecter</Link> </p>
         </div>
     );
 }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('primary-button.css');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +32,6 @@ body {
     font-weight: 500;
     font-size: 40px;
     display: inline-block;
-    /* position: fixed; */
 }
 
 .brand img {
@@ -39,7 +39,6 @@ body {
     margin-left: 40px;
 }
 
-.navbar-items {}
 
 .navbar-item {
     font-size: 17px;
@@ -54,10 +53,6 @@ body {
     padding: 10px 20px;
 }
 
-.navbar-item a:hover {
-    /* background-color: rgb(230, 224, 224);
-    border-radius: 5px; */
-}
 
 .navbar-item a.active {
     color: #000;

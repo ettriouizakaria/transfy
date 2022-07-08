@@ -7,7 +7,7 @@ function Navbar() {
         <div className="navbar">
             <Brand />
             <div className="navbar-items">
-                <NavbarItem link="/acceuil" title="Acceuil" />
+                <NavbarItem link="/" title="Acceuil" />
                 <NavbarItem link="/reservation" title="Reservation" />
                 <NavbarItem link="/login" title="Connexion" />
                 <NavbarItem link="/signin" title="S'inscrire" />

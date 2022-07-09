@@ -1,0 +1,63 @@
+
+.services {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+}
+
+.services h1 {
+    color: #000;
+    width: 100%;
+    text-align: center;
+    margin: 2% 0;
+}
+
+.service {
+    padding: 10px;
+    margin: 40px;
+    width: 250px;
+    height: 200px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 2px 11px #2291a538;
+    display: inline-block;
+    align-content: center;
+}
+
+.service i {
+    font-size: 30px;
+    color: #2291A5;
+    background-color: #E8F6F8;
+}
+
+.service h4 {
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+
+
+@media (max-width: 900px) {
+
+
+    .splashScreen {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        width: 500px;
+        justify-content: center;
+    }
+
+    .familyImg img {
+        height: 500px;
+        width: 400px;
+        margin-left: 0%;
+    }
+}

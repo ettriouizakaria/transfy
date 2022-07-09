@@ -8,6 +8,7 @@ function Navbar() {
             <Brand />
             <div className="navbar-items">
                 <NavbarItem link="/" title="Acceuil" />
+                {/* <NavbarItem link="/home" title="Acceuil" /> */}
                 <NavbarItem link="/reservation" title="Reservation" />
                 <NavbarItem link="/login" title="Connexion" />
                 <NavbarItem link="/signin" title="S'inscrire" />

@@ -4,7 +4,7 @@ import "./services.css";
 
 export default function Services() {
     return (
-        <div className="services">
+        <div className="services partial-width">
             <h1>Nos services</h1>
             <Service style="service" icon="home" title="Réservez sans vous deplacer" content="Tout ce dont vous avez besoin est votre appareil, réservez depuis chez vous et gagnez du temps!" />
 

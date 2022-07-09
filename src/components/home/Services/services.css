@@ -1,6 +1,6 @@
-
 .services {
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,45 +16,47 @@
 }
 
 .service {
-    padding: 10px;
+    padding: 15px 18px;
     margin: 40px;
-    width: 250px;
-    height: 200px;
+    width: 320px;
     color: #000;
     background-color: #fff;
-    box-shadow: 0px 2px 11px #2291a538;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.06);
     display: inline-block;
     align-content: center;
+    border-radius: 10px;
 }
 
 .service i {
-    font-size: 30px;
+    font-size: 35px;
     color: #2291A5;
     background-color: #E8F6F8;
+    padding: 10px 13px;
+    border-radius: 5px;
 }
 
 .service h4 {
     padding: 20px 0;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 16px;
+    line-height: 26px;
 }
 
-
+.service p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
 
 @media (max-width: 900px) {
-
-
     .splashScreen {
         flex-direction: column;
         text-align: center;
     }
-
     .info {
         width: 500px;
         justify-content: center;
     }
-
     .familyImg img {
         height: 500px;
         width: 400px;

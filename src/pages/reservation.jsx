@@ -94,7 +94,7 @@ function Reservation() {
             </div>
             <div className="map">
                 <Map
-                    style="mapbox://styles/mapbox/streets-v9"
+                    style={{mapbox:"//styles/mapbox/streets-v9"}}
                     containerStyle={{
                         height: '400px',
                         width: '500px'

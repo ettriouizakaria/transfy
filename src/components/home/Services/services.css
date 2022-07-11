@@ -48,18 +48,8 @@
     line-height: 26px;
 }
 
-@media (max-width: 900px) {
-    .splashScreen {
-        flex-direction: column;
-        text-align: center;
-    }
-    .info {
-        width: 500px;
-        justify-content: center;
-    }
-    .familyImg img {
-        height: 500px;
-        width: 400px;
-        margin-left: 0%;
+@media (max-width: 1615px) {
+    .services {
+        width: 90%;
     }
 }

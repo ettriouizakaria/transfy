@@ -31,8 +31,8 @@ input {
 .navbar-item {
     font-size: 17px;
     font-weight: 200;
-    display: inline-block;
     font-weight: 500;
+    align-self: baseline;
 }
 
 .navbar-item a {

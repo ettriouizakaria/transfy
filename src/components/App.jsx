@@ -8,6 +8,7 @@ import {
   faMoneyCheck,
   faSliders,
   faUser,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -32,7 +33,8 @@ function App() {
     faFacebook,
     faTwitter,
     faLinkedin,
-    faUser
+    faUser,
+    faBars
   );
 
   return (

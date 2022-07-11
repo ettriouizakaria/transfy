@@ -1,5 +1,5 @@
 import React from "react";
-import Service from "../../../components/Service";
+import Service from "../../Service";
 import "./services.css";
 
 export default function Services() {

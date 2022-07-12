@@ -24,8 +24,8 @@
         "react-icons": "^4.4.0",
         "react-mapbox-gl": "^5.1.1",
         "react-router-dom": "^5.3.3",
-        "react-scripts": "5.0.1",
-        "react-toastify": "^9.0.5",
+        "react-scripts": "^5.0.1",
+        "react-toastify": "^9.0.3",
         "tailwind-styled-components": "^2.1.8",
         "web-vitals": "^2.1.4"
     },

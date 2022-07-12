@@ -24,6 +24,7 @@ import Reservation from "../pages/reservation";
 import SignUp from "../pages/SignUp";
 import { createContext } from "react";
 import Orders from "./orders/Orders";
+import Payment from "../pages/Payment";
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
@@ -63,6 +64,9 @@ function App() {
             </Route>
             <Route exact path='/orders'>
               <Orders />
+            </Route>
+            <Route exact path='/payment'>
+              <Payment />
             </Route>
           </Switch>
         </div>

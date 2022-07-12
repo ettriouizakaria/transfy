@@ -1,0 +1,56 @@
+.new-card label {
+    display: block;
+    color: #000;
+    margin-top: 15px;
+}
+
+.new-card input {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #00000029;
+    border-radius: 7px;
+    padding: 10px 20px;
+    margin: 5px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.row {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.expirary-date {
+    border: 1px solid #00000029;
+    padding: 5px 0;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.expirary-date i {
+    color: #2291A5;
+    background-color: #fff;
+}
+
+.expirary-date input {
+    border: 0;
+    margin: 0;
+    width: 80px;
+    padding: 8px;
+    text-align: center;
+}
+
+.expirary-date .month {
+    border-right: 1px solid #00000029;
+    border-radius: 0;
+}
+
+
+.save-info label {
+    display: inline-block;
+}
+
+.save-info input {
+     width: 20px;
+     padding: 5px;
+}

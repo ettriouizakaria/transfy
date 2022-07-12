@@ -1,0 +1,27 @@
+
+.card {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.card .cardImg {
+    width: 150px;
+    height: 100px;
+    box-shadow: 0px 2px 11px #2291a538;
+    text-align: center;
+    background-color: #fff;
+}
+
+.cardImg img {
+    width: 140px;
+    height: 90px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card p {
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+

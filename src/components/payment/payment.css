@@ -1,0 +1,39 @@
+
+.payment{
+    margin: 20px auto;
+    text-align: left;
+    width: 400px;
+}
+
+.payment h2 {
+    color: #000;
+}
+
+.payment h4 {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.payment-footer {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.payment-footer h6 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.payment-footer p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.payment-footer button {
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+

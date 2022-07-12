@@ -1,5 +1,4 @@
 .dropdown-item {
-    color: #212b27;
     font-weight: 500;
 }
 
@@ -7,14 +6,18 @@
     border-bottom: 1px solid #868686;
 }
 
-.dropdown-item a {
+.dropdown-item a,
+.dropdown-item span {
     padding: 10px 8px;
     display: block;
     font-size: 0.97rem;
     border-radius: 3px;
+    color: #212b27;
+    cursor: pointer;
 }
 
-.dropdown-item a:hover {
+.dropdown-item a:hover,
+.dropdown-item span:hover {
     color: #212b27;
     background-color: #d1d1d1;
 }

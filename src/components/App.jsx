@@ -26,8 +26,12 @@ import { createContext } from "react";
 import Orders from "./orders/Orders";
 import Payment from "../pages/Payment";
 
+export const loggedInUserContext = createContext();
+
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState(null);
+  const [loggedInUser, setLoggedInUser] = useState(
+    JSON.parse(localStorage.getItem("loggedInUser"))
+  );
   library.add(
     faTrain,
     faSliders,
@@ -74,6 +78,5 @@ function App() {
     </loggedInUserContext.Provider>
   );
 }
-export const loggedInUserContext = createContext();
 
 export default App;

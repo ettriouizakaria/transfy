@@ -18,7 +18,7 @@ function SignUp() {
       firstName: "Salman",
       lastName: "Hamdouchi",
       email: "salman@gmail.com",
-      password: "123456",
+      password: "transfy22",
       CIN: "SA11111",
     },
   ];

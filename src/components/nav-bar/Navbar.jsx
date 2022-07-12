@@ -35,7 +35,9 @@ function Navbar() {
   }, []);
 
   return (
-    <div className='navbar partial-width '>
+    <div
+      style={{ alignItems: !loggedInUser ? "center" : "baseline" }}
+      className='navbar partial-width '>
       <div className='items'>
         <Brand />
         <FontAwesomeIcon

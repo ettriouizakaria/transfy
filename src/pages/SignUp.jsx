@@ -11,7 +11,19 @@ function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [CIN, setCIN] = useState("");
-  const { loggedInUser, setLoggedInUser } = useContext(loggedInUserContext);
+  const [loggedInUser, setLoggedInUser] = useContext(loggedInUserContext);
+
+  const signedUpUsers = [
+    {
+      firstName: "Salman",
+      lastName: "Hamdouchi",
+      email: "salman@gmail.com",
+      password: "123456",
+      CIN: "SA11111",
+    },
+  ];
+
+  localStorage.setItem("signedUpUsers", JSON.stringify(signedUpUsers));
 
   const submit = (e) => {
     e.preventDefault();
@@ -24,21 +36,14 @@ function SignUp() {
       CIN: CIN,
     };
 
-    const signedUpUsers = localStorage.getItem("signedUpUsers");
-    let users = [];
+    signedUpUsers.push(user);
+    localStorage.setItem("signedUpUsers", JSON.stringify(signedUpUsers));
 
-    if (signedUpUsers) {
-      users = JSON.parse(signedUpUsers);
-    }
+    // toast.success("Votre compte a été créé avec succes!", {
+    //   autoClose: 2000,
+    // });
 
-    users.push(user);
-    localStorage.setItem("signedUpUsers", JSON.stringify(users));
-
-    toast.success("Votre compte a été créé avec succes!", {
-      autoClose: 2000,
-    });
-
-    localStorage.setItem("loggedInUser", user);
+    localStorage.setItem("loggedInUser", JSON.stringify(user));
     setLoggedInUser(user);
   };
 

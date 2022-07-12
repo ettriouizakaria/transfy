@@ -1,0 +1,72 @@
+.orders-container {
+    margin-top: 40px;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.title {
+    color: #2d2f2a;
+    margin-right: 30px;
+}
+
+.header .input-group {
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #00000029;
+    padding: 0px 20px;
+}
+
+.header .input-group .icon {
+    font-size: 1rem;
+    color: #c1c1c1;
+}
+
+.header input {
+    background-color: #fff;
+    padding: 13px 20px;
+    margin: 0 auto 0 auto;
+    font-size: 15px;
+    font-weight: 300;
+    width: 250px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th {
+    background-color: #f0f4f9;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+table td {
+    font-size: 16px;
+    padding: 13px 10px;
+    color: #2d2f2a;
+    font-weight: 500;
+}
+
+th:first-of-type {
+    border-top-left-radius: 15px;
+}
+
+th:last-of-type {
+    border-top-right-radius: 15px;
+}
+
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 15px;
+}
+
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 15px;
+}

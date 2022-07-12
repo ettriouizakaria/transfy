@@ -1,0 +1,12 @@
+.row button {
+    font-size: 0.95rem;
+    padding: 13px 36px;
+}
+
+.itinerary-body {
+    margin-left: 20px;
+}
+
+.itinerary-body * {
+    font-family: montserrat !important;
+}

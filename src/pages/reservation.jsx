@@ -127,8 +127,8 @@ function Reservation() {
             <div className="inline-divs">
 
                 <div className="form">
-                    <h1>Reserver votre ticket</h1>
-                    <h4>Trajet  </h4>
+                    <h1>Réservez votre ticket</h1>
+                    <h4>Trajet</h4>
                     <div className="input">
                         <input id="start-city" onChange={handleChange} list="start-cities" type="text" placeholder=" Point de Départ" />
                         <datalist id="start-cities">
@@ -147,7 +147,7 @@ function Reservation() {
                         </datalist>
                     </div>
 
-                    <h4>Date  </h4>
+                    <h4>Date</h4>
 
                     <div className="input">
 
@@ -155,7 +155,7 @@ function Reservation() {
 
                     </div>
 
-                    <h4>Critères  </h4>
+                    <h4>Critères</h4>
 
                     <div className="input">
                         <h3>Confort : </h3>
@@ -208,9 +208,6 @@ function Reservation() {
                             <div>{`${val2[1]} (Durée courte)`}</div>
                         </div>
                     </div>
-
-
-
                     <PrimaryButton onClick={handleClick} label="Chercher" marginTop="15"></PrimaryButton>
                 </div>
 

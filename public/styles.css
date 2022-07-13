@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('primary-button.css');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("primary-button.css");
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +8,8 @@
 }
 
 body {
-    color: #50a3a2;
-    background: #F6FBFF;
+    color: #2291a5;
+    background: #f6fbff;
     width: 100%;
     margin: 0;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .form h1 {
-    color: #212B27;
+    color: #212b27;
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 25px;
@@ -103,65 +103,107 @@ body {
     color: #50a3a2;
 }
 
-
-  h4{
+h4 {
     margin-bottom: 15px;
-  }
+}
 
-  .criteria-range{
+.criteria-range {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1rem 0;
     font-weight: 500;
-    color: #574e5a
-  }
-  h3{
+    color: #574e5a;
+}
+
+h3 {
     text-align: left;
     margin-bottom: 15px;
     color: rgb(94, 85, 85);
     letter-spacing: 2px;
-  }
-  .inline-divs{
+}
+
+.inline-divs {
     display: flex;
-  }
-  .map{
+}
+
+.map {
     z-index: 9999;
-  }
-  .path{
-    background-color: #e1dddd29;
-    border: 2px solid #50a3a2;
+}
+
+.path {
     padding: 15px;
-    margin: 10px;
-  }
-  .path-details{
+    margin: 20px;
+    box-shadow: 0px 2px 13px #1d7e8f42;
+    border-radius: 10px;
+}
+
+.path-details {
     margin: 15px;
     font-size: 18px;
     color: #000;
     margin-left: 20%;
     letter-spacing: 4px;
-    margin-bottom: 35px;
-    margin-right: 45px;
-  }
-  .path-price{
+}
+
+.path-price {
     margin: 15px;
     font-size: 18px;
-    color: rgb(95, 103, 139);
     margin-left: 20%;
-    letter-spacing: 3px;
     font-weight: bolder;
-    margin-bottom: 35px;
-    margin-top: 35px;
-  }
-  .iteneraire{
-    border: 2px solid #3b8988;
-    padding: 20px;
-  }
-  .right-align{
+}
+
+.MuiTab-root {
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    font-size: 0.975rem !important;
+}
+
+.Mui-selected {
+    font-weight: 600 !important;
+}
+
+.right-align {
     float: right;
     margin-top: -45px;
-  }
-.slider{
-  color: #1aba11;
-  height: 30px;
+}
+
+.slider {
+    color: #1aba11;
+    height: 30px;
+}
+
+.path-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.path-detail-label {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    flex: 0 0 16rem;
+}
+
+.path-detail-value {
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    flex: 1 0 auto;
+}
+
+.path-details-container {
+    padding-left: 20px;
+    padding: 10px 20px;
+}
+
+.book-itinerary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
 }

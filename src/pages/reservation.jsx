@@ -27,6 +27,7 @@ function Reservation() {
                         let o = {}
                         o.id = e.id
                         o.name = e.text
+                        o.place = e.place_name
                         s.push(o)
                     });
                     setItems(s);
@@ -40,7 +41,7 @@ function Reservation() {
         // an arbitrary start will always be the same
         // only the end or destination will change
         const query = await fetch(
-            `https://api.mapbox.com/directions/v5/mapbox/driving/${start.lon},${start.lat};${end.lon},${end.lat}?steps=true&geometries=geojson&access_token=${mapboxgl.accessToken}`,
+            `https://api.mapbox.com/directions/v5/mapbox/driving/${start.lon},${start.lat};-5.005019,34.046856;-6.855925,34.0020595;${end.lon},${end.lat}?steps=true&geometries=geojson&access_token=${mapboxgl.accessToken}`,
             { method: 'GET' }
         );
         const json = await query.json();
@@ -133,7 +134,7 @@ function Reservation() {
                         <input id="start-city" onChange={handleChange} list="start-cities" type="text" placeholder=" Point de Départ" />
                         <datalist id="start-cities">
                             {items.map(item => (
-                                <option key={"start-" + item.id} value={item.name} />
+                                <option key={"start-" + item.id} value={item.name}>{item.place}</option>
                             ))}
                         </datalist>
                     </div>
@@ -142,7 +143,7 @@ function Reservation() {
                         <input id="destination-city" onChange={handleChange} list="destination-cities" type="text" placeholder="Point de Destination" />
                         <datalist id="destination-cities">
                             {items.map(item => (
-                                <option key={"destination-" + item.id} value={item.name} />
+                                <option key={"destination-" + item.id} value={item.name}>{item.place}</option>
                             ))}
                         </datalist>
                     </div>

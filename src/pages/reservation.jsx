@@ -24,6 +24,23 @@ function Reservation() {
   const [lat, setLat] = useState(33.589886);
   const [zoom, setZoom] = useState(5);
 
+  const startMarker = new mapboxgl.Marker({
+    color: "#EB4747",
+    draggable: false
+  })
+  const int1Marker = new mapboxgl.Marker({
+    color: "#F9D923",
+    draggable: false
+  }).setLngLat([-5.005019, 34.046856])
+  const int2Marker = new mapboxgl.Marker({
+    color: "#F9D923",
+    draggable: false
+  }).setLngLat([-6.855925, 34.0020595])
+  const endMarker = new mapboxgl.Marker({
+    color: "#5FD068",
+    draggable: false
+  })
+
   const handleInput = (event) => {
     let val = event.target.value.toString()
     fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/" + val + ".json?country=ma,eh&limit=5&proximity=ip&types=place,postcode,address,neighborhood,locality,poi&language=fr&fuzzyMatch=true&access_token=" + mapboxgl.accessToken)
@@ -69,6 +86,12 @@ function Reservation() {
     }
     // otherwise, we'll make a new request
     else {
+      startMarker.setLngLat([start.lon, start.lat])
+        .addTo(map.current);
+      int1Marker.addTo(map.current);
+      int2Marker.addTo(map.current);
+      endMarker.setLngLat([end.lon, end.lat])
+        .addTo(map.current);
       map.current.addLayer({
         id: 'route',
         type: 'line',

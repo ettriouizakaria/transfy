@@ -114,7 +114,7 @@ body {
     justify-content: space-between;
     margin: 1rem 0;
     font-weight: 500;
-    color: #8f23b3
+    color: #574e5a
   }
   h3{
     text-align: left;
@@ -161,3 +161,7 @@ body {
     float: right;
     margin-top: -45px;
   }
+.slider{
+  color: #1aba11;
+  height: 30px;
+}

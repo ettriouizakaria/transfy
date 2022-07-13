@@ -8,15 +8,38 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Path from "./path";
+import { styled } from '@mui/material/styles';
 
 
 function Reservation() {
-    const [val2, setVal2] = React.useState([1, 5]);
     const [value, setValue] = React.useState('1');
 
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
+
+    const PrettoSlider = styled(Slider)({
+        color:'#2291A5',
+        height: 10,
+        
+        '& .MuiSlider-thumb': {
+         color:'#2291A5',
+         width:20,
+         height:20,
+         
+        }, 
+        '& .MuiSlider-valueLabel': {
+            marginLeft:10
+        },
+        '& .MuiSlider-track': {
+            height: 10,
+          },
+          '& .MuiSlider-rail': {
+            color:'#EDEEF1',
+            height: 10,
+          },
+      });
+      
     return (
         <div >
 
@@ -44,53 +67,52 @@ function Reservation() {
 
                 <div className="input">
                     <h3>Confort : </h3>
-                    <Slider
+                    
+                    <PrettoSlider
+                        defaultValue={5} 
+                        aria-label="Default"
+                        valueLabelDisplay="auto" 
                         step={1}
                         min={1}
                         max={5}
-                        value={val2}
-                        onChange={(ev, v) => setVal2(v)}
-                        onChangeCommitted={(ev, v) => console.log(v)}
-                        valueLabelDisplay="off"
                         aria-labelledby="range-slider"
                     />
                     <div className="criteria-range">
-                        <div>{`${val2[0]} (moins confortable)`}</div>
-                        <div>{`${val2[1]} (Plus confortable)`}</div>
+                        <div>{` (moins confortable)`}</div>
+                        <div>{` (Plus confortable)`}</div>
                     </div>
                 </div>
                 <div className="input">
                     <h3>Prix : </h3>
-                    <Slider
+                    <PrettoSlider
+                    
+                        defaultValue={5} 
+                        aria-label="Default"
+                        valueLabelDisplay="auto" 
                         step={1}
                         min={1}
                         max={5}
-                        value={val2}
-                        onChange={(ev, v) => setVal2(v)}
-                        onChangeCommitted={(ev, v) => console.log(v)}
-                        valueLabelDisplay="off"
                         aria-labelledby="range-slider"
                     />
                     <div className="criteria-range">
-                        <div>{`${val2[0]} (Moins chère)`}</div>
-                        <div>{`${val2[1]} (Plus chère)`}</div>
+                        <div>{` (Moins chère)`}</div>
+                        <div>{` (Plus chère)`}</div>
                     </div>
                 </div>
                 <div className="input">
                     <h3>Duréé: </h3>
-                    <Slider
+                    <PrettoSlider
+                        defaultValue={5} 
+                        aria-label="Default"
+                        valueLabelDisplay="auto" 
                         step={1}
                         min={1}
                         max={5}
-                        value={val2}
-                        onChange={(ev, v) => setVal2(v)}
-                        onChangeCommitted={(ev, v) => console.log(v)}
-                        valueLabelDisplay="off"
                         aria-labelledby="range-slider"
                     />
                     <div className="criteria-range">
-                        <div>{`${val2[0]} (Durée longue)`}</div>
-                        <div>{`${val2[1]} (Durée courte)`}</div>
+                        <div>{` (Durée longue)`}</div>
+                        <div>{`(Durée courte)`}</div>
                     </div>
                 </div>
 
@@ -104,7 +126,7 @@ function Reservation() {
         <TabContext value={value}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
-                <Tab label="Choix 1" value="1" />
+                <Tab label="Choix 1" value="1"/>
                 <Tab label="Choix 2" value="2" />
                 <Tab label="Choix 3" value="3" />
             </TabList>

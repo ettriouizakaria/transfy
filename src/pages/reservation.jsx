@@ -30,11 +30,11 @@ function Reservation() {
       marginLeft: 10,
     },
     "& .MuiSlider-track": {
-      height: 10,
+      height: 8,
     },
     "& .MuiSlider-rail": {
-      color: "#EDEEF1",
-      height: 10,
+      color: "#1971814d",
+      height: 8,
     },
   });
 
@@ -64,7 +64,7 @@ function Reservation() {
             <h3>Confort : </h3>
 
             <PrettoSlider
-              defaultValue={5}
+              defaultValue={1}
               aria-label='Default'
               valueLabelDisplay='auto'
               step={1}
@@ -80,7 +80,7 @@ function Reservation() {
           <div className='input'>
             <h3>Prix : </h3>
             <PrettoSlider
-              defaultValue={5}
+              defaultValue={1}
               aria-label='Default'
               valueLabelDisplay='auto'
               step={1}
@@ -96,7 +96,7 @@ function Reservation() {
           <div className='input'>
             <h3>Duréé: </h3>
             <PrettoSlider
-              defaultValue={5}
+              defaultValue={1}
               aria-label='Default'
               valueLabelDisplay='auto'
               step={1}

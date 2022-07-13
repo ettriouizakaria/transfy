@@ -31,7 +31,7 @@ function Reservation() {
                     });
                     setItems(s);
                 },
-                (error) => {}
+                (error) => { }
             )
     }
 
@@ -116,7 +116,7 @@ function Reservation() {
         if (map.current) return; // initialize map only once
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/streets-v11',
+            style: 'mapbox://styles/amn009/cl5jhicc4002514p9gu373cee',
             center: [lng, lat],
             zoom: zoom
         });
@@ -127,91 +127,91 @@ function Reservation() {
             <div className="inline-divs">
 
                 <div className="form">
-                        <h1>Reserver votre ticket</h1>
-                        <h4>Trajet  </h4>
-                        <div className="input">
-                            <input id="start-city" onChange={handleChange} list="start-cities" type="text" placeholder=" Point de Départ" />
-                            <datalist id="start-cities">
-                                {items.map(item => (
-                                    <option key={"start-" + item.id} value={item.name} />
-                                ))}
-                            </datalist>
+                    <h1>Reserver votre ticket</h1>
+                    <h4>Trajet  </h4>
+                    <div className="input">
+                        <input id="start-city" onChange={handleChange} list="start-cities" type="text" placeholder=" Point de Départ" />
+                        <datalist id="start-cities">
+                            {items.map(item => (
+                                <option key={"start-" + item.id} value={item.name} />
+                            ))}
+                        </datalist>
+                    </div>
+
+                    <div className="input">
+                        <input id="destination-city" onChange={handleChange} list="destination-cities" type="text" placeholder="Point de Destination" />
+                        <datalist id="destination-cities">
+                            {items.map(item => (
+                                <option key={"destination-" + item.id} value={item.name} />
+                            ))}
+                        </datalist>
+                    </div>
+
+                    <h4>Date  </h4>
+
+                    <div className="input">
+
+                        <input type="Date" placeholder="Date de départ" />
+
+                    </div>
+
+                    <h4>Critères  </h4>
+
+                    <div className="input">
+                        <h3>Confort : </h3>
+                        <Slider
+                            step={1}
+                            min={1}
+                            max={5}
+                            value={val2}
+                            onChange={(ev, v) => setVal2(v)}
+                            onChangeCommitted={(ev, v) => console.log(v)}
+                            valueLabelDisplay="off"
+                            aria-labelledby="range-slider"
+                        />
+                        <div className="criteria-range">
+                            <div>{`${val2[0]} (Moins confortable)`}</div>
+                            <div>{`${val2[1]} (Plus confortable)`}</div>
                         </div>
-
-                        <div className="input">
-                            <input id="destination-city" onChange={handleChange} list="destination-cities" type="text" placeholder="Point de Destination" />
-                            <datalist id="destination-cities">
-                                {items.map(item => (
-                                    <option key={"destination-" + item.id} value={item.name} />
-                                ))}
-                            </datalist>
+                    </div>
+                    <div className="input">
+                        <h3>Prix : </h3>
+                        <Slider
+                            step={1}
+                            min={1}
+                            max={5}
+                            value={val2}
+                            onChange={(ev, v) => setVal2(v)}
+                            onChangeCommitted={(ev, v) => console.log(v)}
+                            valueLabelDisplay="off"
+                            aria-labelledby="range-slider"
+                        />
+                        <div className="criteria-range">
+                            <div>{`${val2[0]} (Moins chère)`}</div>
+                            <div>{`${val2[1]} (Plus chère)`}</div>
                         </div>
-
-                        <h4>Date  </h4>
-
-                        <div className="input">
-
-                            <input type="Date" placeholder="Date de départ" />
-
+                    </div>
+                    <div className="input">
+                        <h3>Durée: </h3>
+                        <Slider
+                            step={1}
+                            min={1}
+                            max={5}
+                            value={val2}
+                            onChange={(ev, v) => setVal2(v)}
+                            onChangeCommitted={(ev, v) => console.log(v)}
+                            valueLabelDisplay="off"
+                            aria-labelledby="range-slider"
+                        />
+                        <div className="criteria-range">
+                            <div>{`${val2[0]} (Durée longue)`}</div>
+                            <div>{`${val2[1]} (Durée courte)`}</div>
                         </div>
-
-                        <h4>Critères  </h4>
-
-                        <div className="input">
-                            <h3>Confort : </h3>
-                            <Slider
-                                step={1}
-                                min={1}
-                                max={5}
-                                value={val2}
-                                onChange={(ev, v) => setVal2(v)}
-                                onChangeCommitted={(ev, v) => console.log(v)}
-                                valueLabelDisplay="off"
-                                aria-labelledby="range-slider"
-                            />
-                            <div className="criteria-range">
-                                <div>{`${val2[0]} (Moins confortable)`}</div>
-                                <div>{`${val2[1]} (Plus confortable)`}</div>
-                            </div>
-                        </div>
-                        <div className="input">
-                            <h3>Prix : </h3>
-                            <Slider
-                                step={1}
-                                min={1}
-                                max={5}
-                                value={val2}
-                                onChange={(ev, v) => setVal2(v)}
-                                onChangeCommitted={(ev, v) => console.log(v)}
-                                valueLabelDisplay="off"
-                                aria-labelledby="range-slider"
-                            />
-                            <div className="criteria-range">
-                                <div>{`${val2[0]} (Moins chère)`}</div>
-                                <div>{`${val2[1]} (Plus chère)`}</div>
-                            </div>
-                        </div>
-                        <div className="input">
-                            <h3>Durée: </h3>
-                            <Slider
-                                step={1}
-                                min={1}
-                                max={5}
-                                value={val2}
-                                onChange={(ev, v) => setVal2(v)}
-                                onChangeCommitted={(ev, v) => console.log(v)}
-                                valueLabelDisplay="off"
-                                aria-labelledby="range-slider"
-                            />
-                            <div className="criteria-range">
-                                <div>{`${val2[0]} (Durée longue)`}</div>
-                                <div>{`${val2[1]} (Durée courte)`}</div>
-                            </div>
-                        </div>
+                    </div>
 
 
 
-                        <PrimaryButton onClick={handleClick} label="Chercher" marginTop="15"></PrimaryButton>
+                    <PrimaryButton onClick={handleClick} label="Chercher" marginTop="15"></PrimaryButton>
                 </div>
 
             </div>

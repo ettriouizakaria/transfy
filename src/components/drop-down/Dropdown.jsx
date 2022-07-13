@@ -5,9 +5,14 @@ import "./dropdown.css";
 export default function Dropdown(props) {
   return (
     <div className='dropdown'>
-      {props.dropdownItems.map((dropdownItem, index) => 
-        <DropdownItem key={index} value={dropdownItem.value} link={dropdownItem.link}/>
-      )}
+      {props.dropdownItems.map((dropdownItem, index) => (
+        <DropdownItem
+          key={index}
+          value={dropdownItem.value}
+          link={dropdownItem.link}
+          action={dropdownItem.action}
+        />
+      ))}
     </div>
   );
 }

@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 export default function DropdownItem(props) {
   return (
     <div className='dropdown-item'>
-      <Link to={props.link}>{props.value}</Link>
+      {props.link && <Link to={props.link}>{props.value}</Link>}
+      {!props.link && <span onClick={() => props.action()}>{props.value}</span>}
     </div>
   );
 }

@@ -128,3 +128,36 @@ body {
   .map{
     z-index: 9999;
   }
+  .path{
+    background-color: #e1dddd29;
+    border: 2px solid #50a3a2;
+    padding: 15px;
+    margin: 10px;
+  }
+  .path-details{
+    margin: 15px;
+    font-size: 18px;
+    color: #000;
+    margin-left: 20%;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+    margin-right: 45px;
+  }
+  .path-price{
+    margin: 15px;
+    font-size: 18px;
+    color: rgb(95, 103, 139);
+    margin-left: 20%;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  .iteneraire{
+    border: 2px solid #3b8988;
+    padding: 20px;
+  }
+  .right-align{
+    float: right;
+    margin-top: -45px;
+  }

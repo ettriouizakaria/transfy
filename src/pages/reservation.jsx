@@ -1,17 +1,24 @@
 import React from "react";
 import PrimaryButton from "../components/primary-button/PrimaryButton";
 import Slider from "@material-ui/core/Slider";
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
+
+import Box from '@mui/material/Box';
+import Tab from '@mui/material/Tab';
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
+import TabPanel from '@mui/lab/TabPanel';
+import Path from "./path";
 
 
 function Reservation() {
     const [val2, setVal2] = React.useState([1, 5]);
-    const Map = ReactMapboxGl({
-        accessToken:
-          'pk.eyJ1IjoiZmFicmljOCIsImEiOiJjaWc5aTV1ZzUwMDJwdzJrb2w0dXRmc2d0In0.p6GGlfyV-WksaDV_KdN27A'
-      });
+    const [value, setValue] = React.useState('1');
+
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
     return (
-        <div className="inline-divs">
+        <div >
 
         <div className="form">
            <form >
@@ -92,18 +99,33 @@ function Reservation() {
                 <PrimaryButton label="Chercher" marginTop="15"></PrimaryButton>
             </form>
         </div>
-        <div className="map">
-                <Map
-                    style="mapbox://styles/mapbox/streets-v9"
-                    containerStyle={{
-                        height: '400px',
-                        width: '500px'
-                    }}
-                    >
-                    <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
-                        <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
-                    </Layer>
-                </Map>
+        <div >
+        <Box sx={{ width: '100%', typography: 'body1' }}>
+        <TabContext value={value}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <TabList onChange={handleChange} aria-label="lab API tabs example">
+                <Tab label="Choix 1" value="1" />
+                <Tab label="Choix 2" value="2" />
+                <Tab label="Choix 3" value="3" />
+            </TabList>
+            </Box>
+            <TabPanel value="1">
+            <div className="iteneraire">
+            <h2>Iteneraire</h2>
+            <Path type="Train" from="Safi" to="Fez" price="200" rating="4"></Path>
+            <Path type="Tramway" from="Station Mohamed 5 Gare Rabat" to="Station Agdal" price="56" rating="3"></Path>
+
+            <h3>Montant total : 256 DH</h3> 
+            <div className="right-align"><PrimaryButton label="Completer"></PrimaryButton></div>
+            
+        
+            </div>
+            
+            </TabPanel>
+            <TabPanel value="2">Item Two</TabPanel>
+            <TabPanel value="3">Item Three</TabPanel>
+        </TabContext>
+        </Box>
         </div>
         </div>
     );

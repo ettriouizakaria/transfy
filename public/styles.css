@@ -117,7 +117,7 @@ h4 {
     justify-content: space-between;
     margin: 1rem 0;
     font-weight: 500;
-    color: #8f23b3;
+    color: #574e5a;
 }
 
 h3 {
@@ -139,3 +139,79 @@ h3 {
     height: 400px;
   }
   
+.path {
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0px 2px 13px #1d7e8f42;
+    border-radius: 10px;
+}
+
+.path-details {
+    margin: 15px;
+    font-size: 18px;
+    color: #000;
+    margin-left: 20%;
+    letter-spacing: 4px;
+}
+
+.path-price {
+    margin: 15px;
+    font-size: 18px;
+    margin-left: 20%;
+    font-weight: bolder;
+}
+
+.MuiTab-root {
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    font-size: 0.975rem !important;
+}
+
+.Mui-selected {
+    font-weight: 600 !important;
+}
+
+.right-align {
+    float: right;
+    margin-top: -45px;
+}
+
+.slider {
+    color: #1aba11;
+    height: 30px;
+}
+
+.path-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.path-detail-label {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    flex: 0 0 16rem;
+}
+
+.path-detail-value {
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    flex: 1 0 auto;
+}
+
+.path-details-container {
+    padding-left: 20px;
+    padding: 10px 20px;
+}
+
+.book-itinerary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}

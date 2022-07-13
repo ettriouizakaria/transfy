@@ -20,7 +20,7 @@ import {
 import Login from "../pages/Login";
 import Home from "../pages/Home";
 import Navbar from "./nav-bar/Navbar";
-import Reservation from "../pages/Reservation";
+import Reservation from "../pages/reservation";
 import SignUp from "../pages/SignUp";
 import { createContext } from "react";
 import Orders from "./orders/Orders";

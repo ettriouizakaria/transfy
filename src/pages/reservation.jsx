@@ -18,7 +18,7 @@ function Reservation() {
 
     const handleChange = (event) => {
         let val = event.target.value.toString()
-        fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/" + val + ".json?language=fr&country=ma,eh&autocomplete=true&types=place&access_token=" + mapboxgl.accessToken)
+        fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/" + val + ".json?country=ma,eh&limit=5&proximity=ip&types=place,postcode,address,neighborhood,locality,poi&language=fr&fuzzyMatch=true&access_token=" + mapboxgl.accessToken)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -26,7 +26,7 @@ function Reservation() {
                     result.features.forEach(e => {
                         let o = {}
                         o.id = e.id
-                        o.name = e.text_fr
+                        o.name = e.text
                         s.push(o)
                     });
                     setItems(s);
@@ -84,7 +84,7 @@ function Reservation() {
         let startCityCoor = {}, destinationCityCoor = {}
         const startCityInput = document.getElementById("start-city").value
         const destinationCityInput = document.getElementById("destination-city").value
-        fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/" + startCityInput + ".json?language=fr&country=ma,eh&autocomplete=true&types=place&limit=1&access_token=" + mapboxgl.accessToken)
+        fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/" + startCityInput + ".json?country=ma,eh&limit=1&access_token=" + mapboxgl.accessToken)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -92,7 +92,7 @@ function Reservation() {
                     let lat = result.features[0].center[1]
                     startCityCoor.lon = lon
                     startCityCoor.lat = lat
-                    fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/" + destinationCityInput + ".json?language=fr&country=ma,eh&autocomplete=true&types=place&limit=1&access_token=" + mapboxgl.accessToken)
+                    fetch("https://api.mapbox.com/geocoding/v5/mapbox.places/" + destinationCityInput + ".json?country=ma,eh&limit=1&access_token=" + mapboxgl.accessToken)
                         .then(res => res.json())
                         .then(
                             (result) => {
@@ -128,7 +128,7 @@ function Reservation() {
 
                 <div className="form">
                         <h1>Reserver votre ticket</h1>
-                        <h4>Traget  </h4>
+                        <h4>Trajet  </h4>
                         <div className="input">
                             <input id="start-city" onChange={handleChange} list="start-cities" type="text" placeholder=" Point de Départ" />
                             <datalist id="start-cities">
@@ -151,7 +151,7 @@ function Reservation() {
 
                         <div className="input">
 
-                            <input type="Date" placeholder="Point de Destination" />
+                            <input type="Date" placeholder="Date de départ" />
 
                         </div>
 
@@ -170,7 +170,7 @@ function Reservation() {
                                 aria-labelledby="range-slider"
                             />
                             <div className="criteria-range">
-                                <div>{`${val2[0]} (moins confortable)`}</div>
+                                <div>{`${val2[0]} (Moins confortable)`}</div>
                                 <div>{`${val2[1]} (Plus confortable)`}</div>
                             </div>
                         </div>
